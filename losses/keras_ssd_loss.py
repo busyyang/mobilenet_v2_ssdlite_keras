@@ -119,8 +119,7 @@ class SSDLoss:
         batch_size = tf.shape(y_pred)[0]
         # Output dtype: tf.int32, note that `n_boxes` in this context denotes
         # the total number of boxes per image, not the number of boxes per cell.
-        n_boxes = tf.shape(y_pred)[
-            1]
+        n_boxes = tf.shape(y_pred)[1]
 
         # 1: Compute the losses for class and box predictions for every box.
 
